@@ -1,5 +1,6 @@
 package com.algokelvin.visitorapps
 
+import algokelvin.actioner.recyclerview.test
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.algokelvin.visitorapps.databinding.ActivityMainBinding
@@ -16,6 +17,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // This is just test that the called of library is succeeded
+        test()
 
         borderUI = BorderUI(this, color = R.color.white,
             colorStroke = R.color.black, sizeStroke = 2, radius = ConstFunc.getSizeDp(resources, 8))
