@@ -1,7 +1,5 @@
-# hf-recyclerview-actioner
-This is Library 'hf-recyclerview-actioner'
-
-<h1 align="center">Demo 'The Simplicity of Registration'</h1>
+<h1 align="center">HBF Recyclerview Actioner</h1>
+<h3 align="center">(Header - Body - Footer ) Recyclerview Actioner</h3>
 
 <p align="center">
   <a href="https://jitpack.io/#algokelvin-373/hf-recyclerview-actioner"><img alt="bintray" src="https://jitpack.io/v/algokelvin-373/hf-recyclerview-actioner.svg"></a>
@@ -10,8 +8,6 @@ This is Library 'hf-recyclerview-actioner'
   <a href="https://www.youtube.com/c/AlgoKelvin373/"><img alt="Youtube" src="https://img.shields.io/youtube/channel/views/UCpSHZFRx64xWwXYbWbyXxfw?style=social"></a>
   <a href="https://www.youtube.com/c/AlgoKelvin373/"><img alt="Youtube" src="https://img.shields.io/youtube/channel/subscribers/UCpSHZFRx64xWwXYbWbyXxfw?style=social"></a>
 </p>
-
-<p align="center">The Simplicity Registration of Android</p>
 
 ## Description
 
