@@ -1,4 +1,2 @@
 rootProject.name = "VisitorApps"
-include ':app'
 include ':recyclerview-hbf'
-include ':recyclerview_demo1'
