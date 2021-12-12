@@ -20,7 +20,6 @@ Coming Soon
 ## _Step by Step to implement this_
 
 #### 1. Add the JitPack repository to your `build.gradle`
-
 ```gradle
 allprojects {
     repositories {
@@ -30,12 +29,35 @@ allprojects {
 }
   ```
   #### 2. Add Module dependency in your `app/build.gradle`
-  
   ```gradle
   dependencies {
-    implementation 'com.github.algokelvin-373:simplicity-registration:${version}'
+    implementation 'com.github.algokelvin-373:hf-recyclerview-actioner:${version}'
   }
   ```
+  #### 3. Implement `RecyclerViewBody`
+  ```kotlin
+  RecyclerViewBody(this, [id_recyclerview], [size], [layout_item]) { view, position ->
+    ...
+  }
+  ```
+  <table>
+    <tr>
+      <th>id / parameters</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>id_recyclerview</td>
+      <td>Id names for layout Recyclerview (using KTE)</td>
+    </tr>
+    <tr>
+      <td>size</td>
+      <td>Define Size or Length Data List / Array / ArrayList</td>
+    </tr>
+    <tr>
+      <td>layout_item</td>
+      <td>Define Name Layout for Item Data Recyclerview</td>
+    </tr>
+  </table>
 
 ### Contributions
 
