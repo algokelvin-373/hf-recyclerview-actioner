@@ -57,6 +57,14 @@ allprojects {
       <td>layout_item</td>
       <td>Define Name Layout for Item Data Recyclerview</td>
     </tr>
+    <tr>
+      <td>view</td>
+      <td>View for <b>layout_item</b></td>
+    </tr>
+    <tr>
+      <td>position</td>
+      <td>Define Position data</td>
+    </tr>
   </table>
 
 ### Contributions
