@@ -1,7 +1,7 @@
 package com.algokelvin.visitorapps
 
-import algokelvin.actioner.recyclerview.test
 import android.os.Bundle
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.algokelvin.visitorapps.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.item_visitor.view.*
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // This is just test that the called of library is succeeded
-        test()
+        // test()
 
         borderUI = BorderUI(this, color = R.color.white,
             colorStroke = R.color.black, sizeStroke = 2, radius = ConstFunc.getSizeDp(resources, 8))
