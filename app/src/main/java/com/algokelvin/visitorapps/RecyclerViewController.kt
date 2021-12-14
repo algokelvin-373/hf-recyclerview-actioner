@@ -6,7 +6,6 @@ import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.item_visitor.view.*
 
 class RecyclerViewController(
     private val context: Context,
@@ -15,6 +14,7 @@ class RecyclerViewController(
     private val layoutItem: Int,
     private val dataBool: Array<Boolean?>,
     private val dataHeader: Array<String?>,
+    private val headerText: Int,
     private val bindViewHolder : (View, Int) -> Unit
 ) {
     private var header = "null"
@@ -29,7 +29,8 @@ class RecyclerViewController(
     private fun setRecyclerView() {
         recyclerView.layoutManager = LinearLayoutManager(context)
         val dataAdapter = DataAdapter(size, layoutItem) { view, position ->
-            header(position, dataBool[position], view.text_header, dataHeader[position])
+            val textHeader = view.findViewById<TextView>(headerText)
+            header(position, dataBool[position], textHeader, dataHeader[position])
             bindViewHolder(view, position)
             scrollConditional(position, size)
         }

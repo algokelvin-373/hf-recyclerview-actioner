@@ -1,7 +1,6 @@
 package com.algokelvin.visitorapps
 
 import android.os.Bundle
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.algokelvin.visitorapps.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.item_visitor.view.*
@@ -18,9 +17,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // This is just test that the called of library is succeeded
-        // test()
-
         borderUI = BorderUI(this, color = R.color.white,
             colorStroke = R.color.black, sizeStroke = 2, radius = ConstFunc.getSizeDp(resources, 8))
 
@@ -35,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         RecyclerViewController(this, binding.rvItem,
             visitor.size, R.layout.item_visitor,
-            dataBool, dataHeader)
+            dataBool, dataHeader, R.id.date_visitor)
         { view, position ->
             view.cl_data_visitor.background = borderUI.getBorder()
             view.name_visitor.text = ("${position + 1} Name: ${visitor[position].name}")
