@@ -15,6 +15,7 @@ class RecyclerViewHeader(
     private val layoutItem: Int,
     private val dataBool: Array<Boolean?>,
     private val dataHeader: Array<String?>,
+    private val headerText: Int,
     private val bindViewHolder : (View, Int) -> Unit
 ) {
     private var header = "null"
@@ -29,7 +30,8 @@ class RecyclerViewHeader(
     private fun setRecyclerView() {
         recyclerView.layoutManager = LinearLayoutManager(context)
         val dataAdapter = DataAdapter(size, layoutItem) { view, position ->
-            //header(position, dataBool[position], view.date_visitor, dataHeader[position])
+            val textHeader = view.findViewById<TextView>(headerText)
+            header(position, dataBool[position], textHeader, dataHeader[position])
             bindViewHolder(view, position)
             scrollConditional(position, size)
         }
