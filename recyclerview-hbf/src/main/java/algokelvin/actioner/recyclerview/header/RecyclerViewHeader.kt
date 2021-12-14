@@ -51,12 +51,12 @@ class RecyclerViewHeader(
     }
     private fun scrollConditional(position: Int, max: Int) {
         if (position + 1 == max) {
-            Log.i("datahistory-date", "${position} Position is End")
+            Log.i("header", "${position} Position is End")
             endShow = true
             xStart = true
         }
         if (position == 0) {
-            Log.i("datahistory-date", "${position} Position is TOP")
+            Log.i("header", "${position} Position is TOP")
             endShow = false
             if (xStart)
                 xShow = true
