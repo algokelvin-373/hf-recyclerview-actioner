@@ -1,5 +1,6 @@
-package com.algokelvin.visitorapps
+package algokelvin.actioner.recyclerview.header
 
+import algokelvin.actioner.recyclerview.controller.DataAdapter
 import android.content.Context
 import android.util.Log
 import android.view.View
@@ -7,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class RecyclerViewController(
+class RecyclerViewHeader(
     private val context: Context,
     private val recyclerView: RecyclerView,
     private val size: Int,
@@ -84,5 +85,4 @@ class RecyclerViewController(
             }
         }
     }
-
 }
