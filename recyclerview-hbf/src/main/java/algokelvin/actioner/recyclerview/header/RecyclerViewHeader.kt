@@ -1,5 +1,6 @@
-package com.algokelvin.visitorapps
+package algokelvin.actioner.recyclerview.header
 
+import algokelvin.actioner.recyclerview.controller.DataAdapter
 import android.content.Context
 import android.util.Log
 import android.view.View
@@ -7,14 +8,13 @@ import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class RecyclerViewController(
+class RecyclerViewHeader(
     private val context: Context,
     private val recyclerView: RecyclerView,
     private val size: Int,
     private val layoutItem: Int,
     private val dataBool: Array<Boolean?>,
     private val dataHeader: Array<String?>,
-    private val headerText: Int,
     private val bindViewHolder : (View, Int) -> Unit
 ) {
     private var header = "null"
@@ -29,8 +29,7 @@ class RecyclerViewController(
     private fun setRecyclerView() {
         recyclerView.layoutManager = LinearLayoutManager(context)
         val dataAdapter = DataAdapter(size, layoutItem) { view, position ->
-            val textHeader = view.findViewById<TextView>(headerText)
-            header(position, dataBool[position], textHeader, dataHeader[position])
+            //header(position, dataBool[position], view.date_visitor, dataHeader[position])
             bindViewHolder(view, position)
             scrollConditional(position, size)
         }
@@ -84,5 +83,4 @@ class RecyclerViewController(
             }
         }
     }
-
 }
