@@ -1,9 +1,9 @@
-package com.algokelvin.visitorapps
+package algokelvin.recyclerview.demo2
 
-import algokelvin.actioner.recyclerview.test
-import android.os.Bundle
+import algokelvin.actioner.recyclerview.header.RecyclerViewHeader
+import algokelvin.recyclerview.demo2.databinding.ActivityMainBinding
 import androidx.appcompat.app.AppCompatActivity
-import com.algokelvin.visitorapps.databinding.ActivityMainBinding
+import android.os.Bundle
 import kotlinx.android.synthetic.main.item_visitor.view.*
 import java.util.*
 
@@ -11,18 +11,11 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var dataBool: Array<Boolean?>
     private lateinit var dataHeader: Array<String?>
-    private lateinit var borderUI: BorderUI
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        // This is just test that the called of library is succeeded
-        test()
-
-        borderUI = BorderUI(this, color = R.color.white,
-            colorStroke = R.color.black, sizeStroke = 2, radius = ConstFunc.getSizeDp(resources, 8))
 
         val visitor = DataSample.setData2()
         dataBool = arrayOfNulls(visitor.size)
@@ -33,15 +26,12 @@ class MainActivity : AppCompatActivity() {
             dataHeader[x] = visitor[x].date
         }
 
-        RecyclerViewController(this, binding.rvItem,
-            visitor.size, R.layout.item_visitor,
-            dataBool, dataHeader)
+        RecyclerViewHeader(this, binding.rvItem, visitor.size, R.layout.item_visitor,
+            dataBool, dataHeader, R.id.date_visitor)
         { view, position ->
-            view.cl_data_visitor.background = borderUI.getBorder()
             view.name_visitor.text = ("${position + 1} Name: ${visitor[position].name}")
             view.address_visitor.text = (visitor[position].address + " " + visitor[position].date)
         }
 
     }
-
 }

@@ -1,4 +1,4 @@
-package com.algokelvin.visitorapps;
+package algokelvin.recyclerview.demo2;
 
 import java.util.ArrayList;
 
@@ -9,7 +9,7 @@ public class DataSample {
                 "Jl. Merak No.51 Jaten, Jawa Tengah"));
         data.add(new Visitor(2, "10 Desember 2022", "Fransisco",
                 "Jl. Meteng Kalibata, Jakarta Barat"));
-        data.add(new Visitor(3, "10 Desember 2022", "Yulia Grace",
+        data.add(new Visitor(3, "10 Desember 2022", "Angelina Tech",
                 "Tangerang, Banten"));
         data.add(new Visitor(4, "10 Desember 2022", "Veren Valencia",
                 "Solo Creator, Tangerang Selatan"));
@@ -17,11 +17,11 @@ public class DataSample {
                 "Jl. Kemayoran, Jakarta Utara, DKI Jakarta"));
         data.add(new Visitor(6, "08 Desember 2022", "Fransisco",
                 "Jl. Meteng Kalibata, Jakarta Barat"));
-        data.add(new Visitor(7, "08 Desember 2022", "Yulia Grace",
+        data.add(new Visitor(7, "08 Desember 2022", "Angelina Tech",
                 "Tangerang, Banten"));
         data.add(new Visitor(8, "08 Desember 2022", "Veren Valencia",
                 "Solo Creator, Tangerang Selatan"));
-        data.add(new Visitor(9, "07 Desember 2022", "Yulia Grace",
+        data.add(new Visitor(9, "07 Desember 2022", "Angelina Tech",
                 "Tangerang, Banten"));
         data.add(new Visitor(10, "07 Desember 2022", "Veren Valencia",
                 "Solo Creator, Tangerang Selatan"));
@@ -35,7 +35,7 @@ public class DataSample {
                 "Jl. Merak No.51 Jaten, Jawa Tengah"));
         data.add(new Visitor(15, "03 Desember 2022", "Fransisco",
                 "Jl. Meteng Kalibata, Jakarta Barat"));
-        data.add(new Visitor(16, "03 Desember 2022", "Yulia Grace",
+        data.add(new Visitor(16, "03 Desember 2022", "Angelina Tech",
                 "Tangerang, Banten"));
         data.add(new Visitor(17, "03 Desember 2022", "Veren Valencia",
                 "Solo Creator, Tangerang Selatan"));
@@ -53,7 +53,7 @@ public class DataSample {
                 "Jl. Merak No.51 Jaten, Jawa Tengah"));
         data.add(new Visitor(2, "28 November 2022", "Fransisco",
                 "Jl. Meteng Kalibata, Jakarta Barat"));
-        data.add(new Visitor(3, "25 November 2022", "Yulia Grace",
+        data.add(new Visitor(3, "25 November 2022", "Angelina Tech",
                 "Tangerang, Banten"));
         data.add(new Visitor(4, "25 November 2022", "Veren Valencia",
                 "Solo Creator, Tangerang Selatan"));
@@ -61,11 +61,11 @@ public class DataSample {
                 "Jl. Kemayoran, Jakarta Utara, DKI Jakarta"));
         data.add(new Visitor(6, "21 November 2022", "Fransisco",
                 "Jl. Meteng Kalibata, Jakarta Barat"));
-        data.add(new Visitor(7, "21 November 2022", "Yulia Grace",
+        data.add(new Visitor(7, "21 November 2022", "Angelina Tech",
                 "Tangerang, Banten"));
         data.add(new Visitor(8, "21 November 2022", "Veren Valencia",
                 "Solo Creator, Tangerang Selatan"));
-        data.add(new Visitor(9, "21 November 2022", "Yulia Grace",
+        data.add(new Visitor(9, "21 November 2022", "Angelina Tech",
                 "Tangerang, Banten"));
         data.add(new Visitor(10, "15 November 2022", "Veren Valencia",
                 "Solo Creator, Tangerang Selatan"));
@@ -79,7 +79,7 @@ public class DataSample {
                 "Jl. Merak No.51 Jaten, Jawa Tengah"));
         data.add(new Visitor(15, "11 November 2022", "Fransisco",
                 "Jl. Meteng Kalibata, Jakarta Barat"));
-        data.add(new Visitor(16, "08 November 2022", "Yulia Grace",
+        data.add(new Visitor(16, "08 November 2022", "Angelina Tech",
                 "Tangerang, Banten"));
         data.add(new Visitor(17, "08 November 2022", "Veren Valencia",
                 "Solo Creator, Tangerang Selatan"));

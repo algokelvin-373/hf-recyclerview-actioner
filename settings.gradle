@@ -1,2 +1,3 @@
 rootProject.name = "VisitorApps"
 include ':recyclerview_demo1'
+include ':recyclerview_demo2'

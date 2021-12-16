@@ -1,4 +1,4 @@
-package com.algokelvin.visitorapps
+package algokelvin.recyclerview.demo2
 
 data class Visitor(
     val id: Int,
